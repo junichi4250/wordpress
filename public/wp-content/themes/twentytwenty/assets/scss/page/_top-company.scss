@@ -1,0 +1,36 @@
+// top-company
+.top-company {
+    // container
+    // &__container {
+    //     @include container("default");
+    // }
+    // heading
+    &__heading {
+        margin-bottom: 6.4rem;
+    }
+    // content
+    // &__content {
+    //     @include responsive("pc") {
+    //         display: flex;
+    //     }
+    // }
+    &__content-image {
+        // @include responsive("pc") {
+        //     width: 50%;
+        // }
+        img{
+            border-radius: 1.6rem;
+        }
+    }
+    &__content-table {
+        // @include responsive("pc") {
+        //     width: 50%;
+        //     padding: 0 0 0 3.2rem;
+        // }
+        padding: 3.2rem 0 0 0;
+    }
+    // guide
+    &__guide {
+        padding-top: 6.4rem;
+    }
+}

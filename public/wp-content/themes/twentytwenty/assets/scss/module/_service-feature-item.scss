@@ -1,0 +1,26 @@
+// service-feature-item 
+.service-feature-item {
+    // サムネイル
+    &__thumbnail {
+        overflow:hidden;
+    }
+    &__thumbnail-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        border-radius: 100%;
+    }
+    // 内容
+    &__content {
+        padding: 1.6rem;
+    }
+    &__content-title {
+        margin-bottom: 1.6rem;
+        font-weight: 700;
+        font-size: 2.0rem;
+        text-align: center;
+    }
+    &__content-text {
+        color: $color_grey;
+    }
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.p-top {
+    &__service {
+        .container {
+            font-family: 'Noto Sans JP';
+            text-align: center;
+            .heading {
+                margin-bottom:6.4rem;
+                .page-heading {
+                    &__content {
+                        .sub-title {
+                            font-size: 15px;
+                            font-weight: 300;
+                        }
+                        .main-title {
+                            font-size: 34px;
+                            color: #2CB2C1;
+                        }
+                    }
+                }
+
+            }
+            .list {
+                display: flex;
+                justify-content: center;
+                .list-item {
+                    padding:2.4rem 1.6rem;
+                    .service-feature-item {
+                        &__thumbnail {
+                            &--image {
+
+                            }
+                        }
+                        &__content {
+                            font-size: 15px;
+                            &--title {
+                                font-weight: bold;
+                            }
+                            &--text {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

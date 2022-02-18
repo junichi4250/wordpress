@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.c-btn {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    padding: 1.6rem;
+    border: 1px solid $color_main;
+    border-radius: 50px;
+    background: $color_main;
+    .color {
+        color: white;
+    }
+}

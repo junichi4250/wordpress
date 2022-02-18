@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @import "setting/variables";
-@import "base/base";
-@import "base/reset";
+@import "foundation/base";
+@import "foundation/reset";
 @import "base/animation";
 @import "base/wordpress";
 
@@ -34,21 +34,21 @@
 //  * -------------------------------------------------------------------
 //  */
 // // ナビゲーション
-@import "module/nav-header";
-@import "module/nav-drawer";
-@import "module/nav-pagetop";
+@import "layout/nav-header";
+@import "layout/nav-drawer";
+@import "layout/nav-pagetop";
 // メインビジュアル
 @import "module/mainvisual";
 // 見出し
 @import "module/page-heading";
 @import "module/page-heading-sub";
 // フッター
-@import "module/footer";
+@import "layout/footer";
 // 画像モーダル
 @import "module/photo-modal";
 // ボタン
-@import "module/button-guide";
-@import "module/button-detail";
+// @import "module/button-guide";
+// @import "module/button-detail";
 // ページネーション
 @import "module/pagination";
 // フォーム
@@ -82,7 +82,6 @@
 // トップページ - メッセージ
 @import "page/top-message";
 // トップページ - サービス
-@import "page/top-service";
 // トップページ - 制作実績
 @import "page/top-works";
 // トップページ - 会社情報
@@ -90,3 +89,9 @@
 // 問い合わせ - CTA
 @import "page/contact-guide";
 
+// component
+@import "object/component/_btn";
+
+
+// object
+@import "object/project/_home";

@@ -6,9 +6,10 @@
     width: 100%;
     max-width: 200px;
     padding: 1.6rem;
-    border: 1px solid $color_main;
     border-radius: 50px;
     background: $color_main;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
     .color {
         color: white;
     }

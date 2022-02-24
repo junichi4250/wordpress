@@ -1,16 +1,31 @@
 # 環境構築手順
 
-.env-exampleのファイル名を.envへ変更
+1 .env-exampleのファイル名を.envへ変更
 
+2 dockerコマンド
 ```
 docker compose up -d
 ```
 
-localhost:8080へアクセス
+3 localhost:8080へアクセス
 
-wordpressの起動画面に従って設定を進める
+4 wordpressの起動画面に従って設定を進める
 
-環境構築終わり
+5 CSSの設定
+
+public/wp-content/themes/twentytwenty/にて
+```
+yarn install
+```
+
+
+
+補足:
+scssのホットリロードは
+```
+yarn run watch
+```
+
 
 以下、参考サイトからの引用
 

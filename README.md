@@ -1,3 +1,21 @@
+# 環境構築手順
+
+.env-exampleのファイル名を.envへ変更
+
+```
+docker compose up -d
+```
+
+localhost:8080へアクセス
+
+wordpressの起動画面に従って設定を進める
+
+環境構築終わり
+
+以下、参考サイトからの引用
+
+
+
 # Quick-start-wordpress-docker
 DockerによるWordpressのローカル環境構築を行うためのリポジトリ
 

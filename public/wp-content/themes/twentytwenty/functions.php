@@ -786,3 +786,20 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+
+// function read_js(){
+//     wp_enqueue_script( main-script, get_stylesheet_directory_uri() . '/dist/main.js'['jquery']);
+// }
+// add_action('wp_enqueue_scripts', 'read_js');
+
+function custom_print_scripts() {
+	if (!is_admin()) {
+	  //デフォルトjquery削除
+	  wp_deregister_script('jquery');
+	  
+	  //GoogleCDNから読み込む
+	  wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' );
+	}
+  }
+  add_action('wp_print_scripts', 'custom_print_scripts');

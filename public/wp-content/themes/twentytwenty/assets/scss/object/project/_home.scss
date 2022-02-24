@@ -1,7 +1,34 @@
 @charset "utf-8";
 
 .p-top {
+    &__mainvisual {
+        position: relative;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../img/mainvisual.jpg");
+        height: 650px;
+        z-index: -10;
+        .container {
+            position: relative;
+            top: 50%;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            font-family: 'Noto Sans JP';
+            .text-main {
+                font-weight: 700;
+                font-size: 72px;
+                line-height: 1;
+            }
+            .text-sub {
+                padding-top: 1.6rem;
+                font-size: 24px;
+            }
+        }
+    }
     &__service {
+        padding-bottom: 30px;
         .container {
             font-family: 'Noto Sans JP';
             text-align: center;
@@ -9,11 +36,13 @@
                 margin-bottom:6.4rem;
                 .page-heading {
                     &__content {
+                        padding-top: 30px;
                         .sub-title {
                             font-size: 15px;
                             font-weight: 300;
                         }
                         .main-title {
+                            padding-top: 60px;
                             font-size: 34px;
                             color: #2CB2C1;
                         }
@@ -22,14 +51,27 @@
 
             }
             .list {
-                display: flex;
-                justify-content: center;
+                @include sm {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                @include lg {
+                    justify-content: center;
+                }
                 .list-item {
-                    padding:2.4rem 1.6rem;
+                    @include md {
+                        width: 50%;
+                    }
+                    @include lg {
+                        width: 30%;
+                    }
+                    padding:0 130px 20px;
                     .service-feature-item {
                         &__thumbnail {
                             &--image {
-
+                                width: 90px;
+                                height: 90px;
+                                margin: 0 auto;
                             }
                         }
                         &__content {
@@ -38,11 +80,79 @@
                                 font-weight: bold;
                             }
                             &--text {
-
+                                padding-top: 10px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    &__works {
+        background-color: $color_light;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .container {
+            .heading {
+                margin-bottom: 6.4rem;
+                .page-heading {
+                    &__content {
+                        text-align: center;
+                        .main-title {
+                            font-size: 34px;
+                            color: #2CB2C1;
+                        }
+                    }
+                }
+            }
+            .list {
+                margin-top: -40px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                .list-item {
+                    width: calc(100% / 2 - 30px);
+                    margin: 15px;
+                    @include lg {
+                        width: calc(100% / 4 - 30px);
+                    }
+                    .works-item {
+                        &__content {
+                            &--title {
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                            &--tag {
+                                font-size: 12px;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+    &__contact-guide {
+        position: relative;
+        .background {
+            height: 300px;
+            .image {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            .message {
+                font-size: 26px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 40px;
             }
         }
     }

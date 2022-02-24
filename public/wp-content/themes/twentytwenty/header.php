@@ -17,6 +17,8 @@
 		<meta property="og:locale" content="ja_JP" />
 		<meta name="twitter:card" content="Summary Card" />
 
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty/dist/style.css">
+
 		<?php wp_head(); ?>
 
         <!-- main.jsが読み込めないので一旦こちらに記述 -->

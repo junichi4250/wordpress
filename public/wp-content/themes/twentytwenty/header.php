@@ -36,6 +36,7 @@
 		<meta name="twitter:card" content="Summary Card" />
 
         <link rel="stylesheet" href="/wp-content/themes/twentytwenty/dist/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 
 		<?php wp_head(); ?>
 

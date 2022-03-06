@@ -186,5 +186,8 @@
                 </div>
             </div>
         </section>
+        <div id="page_top" class="p-top__btn">
+            <a href="#" class="container"></a>
+        </div>
     </main>
 <?php get_footer(); ?>

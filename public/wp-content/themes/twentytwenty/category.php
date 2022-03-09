@@ -7,18 +7,10 @@
                 <?php single_cat_title() ?>
             </div>
             <ul class="works-item">
+
                 <?php
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    $the_query = new WP_Query( array(
-                    'post_status' => 'publish',
-                    'post_type' => 'post', //　ページの種類（例、page、post、カスタム投稿タイプ名）
-                    'paged' => $paged,
-                    'posts_per_page' => 3, // 表示件数
-                    'orderby'     => 'date',
-                    'order' => 'DESC'
-                    ) );
-                    if ($the_query->have_posts()) :
-                        while ($the_query->have_posts()) : $the_query->the_post();
+                    if (have_posts()) :
+                        while (have_posts()) : the_post();
                     ?>
                 <?php
                     echo the_time('Y.m.d')
@@ -47,7 +39,7 @@
                 echo paginate_links(array(
                     'base' => $paginate_base,
                     'format' => $paginate_format,
-                    'total' => $the_query->max_num_pages,
+                    // 'total' => $the_query->max_num_pages,
                     'mid_size' => 1,
                     'current' => ($paged ? $paged : 1),
                     'prev_text' => '< 前へ',
